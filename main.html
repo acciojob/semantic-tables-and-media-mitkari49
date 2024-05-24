@@ -1,48 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>HTML Audio and Video List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<div class="container">
-		<table>
-			<thead>
-				<tr>
-					<th>Roll numbers</tdh
-					<th>Names</th>
-				</tr>
-				<tbody>
-				<tr>
-				</tr>
-				<tr></tr>
-					</tbody>
-			</thead>
-		</table>
-	</div>
-	<h1>List of medias</h1>
-	<section class="list">
-		<ol>
-			<li><img src="https://picsum.photos/id/123/200/300" alt="water droplets"></li>
-			<li>
-				<video controls width="320" height="240">
-					<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-					your browser does not support this video
-				</video>
-			</li>
-			<li>
-				<audio controls>
-					<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-				</audio>
-			</li>
-		</ol>
-	</section>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Page Heading -->
+    <h1 class="center">HTML Assignment with Media List</h1>
 
+    <!-- Table -->
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll numbers</th>
+                    <th>Names</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Emily Johnson</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Ordered List with Media Items -->
+    <h2>List of medias</h2>
+    <ol>
+        <!-- List Item with Image -->
+        <li>
+            <img src="https://picsum.photos/id/123/200/300" alt="water droplets">
+        </li>
+        <!-- List Item with Video -->
+        <li>
+            <video controls width="320" height="240">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
+        <!-- List Item with Audio -->
+        <li>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+    </ol>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
