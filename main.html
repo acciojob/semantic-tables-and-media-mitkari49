@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Audio and Video List</title>
+    <title>HTML Assignment with Media List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,10 +12,11 @@
     <!-- Table -->
     <div class="container">
         <table>
+            <caption>Roll numbers and Names</caption>
             <thead>
                 <tr>
-                    <th>Roll numbers</th>
-                    <th>Names</th>
+                    <th scope="col">Roll numbers</th>
+                    <th scope="col">Names</th>
                 </tr>
             </thead>
             <tbody>
@@ -42,22 +43,31 @@
     <ol>
         <!-- List Item with Image -->
         <li>
-            <img src="https://picsum.photos/id/123/200/300" alt="Sample Image">
+            <figure>
+                <img src="https://picsum.photos/id/123/200/300" alt="Sample Image">
+                <figcaption>Image: Source <a href="https://picsum.photos/id/123/200/300">https://picsum.photos/id/123/200/300</a></figcaption>
+            </figure>
         </li>
         <!-- List Item with Video -->
         <li>
-            <video controls width="320" height="240">
-                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                Your browser does not support the video element.
-            </video>
+            <figure>
+                <video controls width="320" height="240">
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Video: Source <a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4</a></figcaption>
+            </figure>
         </li>
         <!-- List Item with Audio -->
         <li>
-            <audio controls>
-                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio> 
+            <figure>
+                <audio controls>
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+                <figcaption>Audio: Source <a href="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg</a></figcaption>
+            </figure>
         </li>
     </ol>
 
